@@ -4,12 +4,12 @@ def badge_maker(name)
 end 
 
 def batch_badge_creator(attendees)
-  name_array.collect{|name| badge_maker(name)}
+  attendees.collect{|name| badge_maker(name)}
 end
 
 def assign_rooms(attendees)
   room_assignments = []
-  name_array.each_with_index do |item, index|
+  attendees.each_with_index do |item, index|
     room_assignments << "Hello, #{item}! You'll be assigned to room #{index + 1}!"
   end
   room_assignments
