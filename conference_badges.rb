@@ -7,7 +7,7 @@ def batch_badge_creator(attendees)
   name_array.collect{|name| badge_maker(name)}
 end
 
-def assign_rooms(name_array)
+def assign_rooms(attendees)
   room_assignments = []
   name_array.each_with_index do |item, index|
     room_assignments << "Hello, #{item}! You'll be assigned to room #{index + 1}!"
@@ -17,7 +17,7 @@ end
 
 def printer
   badges =  batch_badge_creator(attendees)
-  rooms = assign_rooms(name_array)
+  rooms = assign_rooms(attendees)
   badges.each{|badge| puts badge}
   rooms.each{|room| puts room}
 end
