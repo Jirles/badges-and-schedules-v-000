@@ -9,9 +9,13 @@ end
 
 def assign_rooms(name_array)
   room_assignments = []
-  name_array.each_with_index do |item, 
+  name_array.each_with_index do |item, index|
+    room_assignments << "Hello, #{item}! You'll be assigned to room #{index + 1}!"
+  end
+  room_assignments
 end
 
 def printer
-  
+  puts batch_badge_creater
+  puts assign_rooms
 end
