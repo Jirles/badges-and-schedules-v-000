@@ -9,7 +9,7 @@ end
 
 def assign_rooms(name_array)
   room_assignments = []
-  
+  name_array.each_with_index do |
 end
 
 def printer
