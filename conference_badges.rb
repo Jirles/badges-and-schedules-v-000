@@ -8,7 +8,8 @@ def batch_badge_creater(name_array)
 end
 
 def assign_rooms(name_array)
-  room_assignmetns = []
+  room_assignments = []
+  
 end
 
 def printer
